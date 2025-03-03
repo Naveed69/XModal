@@ -10,7 +10,7 @@ const ModalSet = ({ isOpen, setOpenModal, children }) => {
       shouldCloseOnOverlayClick={true}
       //   style={customStyles}
     >
-      {children}
+      <h1>Hello Modal</h1>
     </Modal>
   );
 };
