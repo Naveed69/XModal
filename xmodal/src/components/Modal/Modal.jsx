@@ -7,16 +7,20 @@ function ModalSet({ isOpen, setIsOpen, children }) {
     setIsOpen(false);
   };
   const customStyles = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.5)", // Dark semi-transparent background
+      backdropFilter: "blur(8px)", // Blurs the background
+    },
     content: {
-      width: "95%",
-      maxWidth: "572px",
+      width: "80%",
+      maxWidth: "500px",
       top: "50%",
       left: "50%",
       transform: "translateX(-50%) translateY(-50%)",
       height: "fit-content",
       maxHeight: "90vh",
-      background: "rgba(239, 239, 239, 0.85)",
-      border: "0",
+      background: "white",
+      border: "1px solid #ccc",
       borderRadius: "15px",
       padding: "2rem",
     },
@@ -26,7 +30,7 @@ function ModalSet({ isOpen, setIsOpen, children }) {
       isOpen={isOpen}
       onRequestClose={handleClose}
       shouldCloseOnOverlayClick={true}
-      // style={customStyles}
+      style={customStyles}
     >
       {children}
     </Modal>
