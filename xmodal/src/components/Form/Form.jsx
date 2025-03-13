@@ -45,7 +45,7 @@ const Form = ({ setOpenModal }) => {
       <div className="modal-content">
         <form onSubmit={(e) => handle(e)}>
           <h2>Fill Details</h2>
-          <label id={styles.username}>
+          <label id="username">
             Username:
             <input
               type="text"
@@ -57,7 +57,7 @@ const Form = ({ setOpenModal }) => {
               required
             />
           </label>
-          <label id={styles.email}>
+          <label id="email">
             Email Address:
             <input
               type="email"
@@ -69,7 +69,7 @@ const Form = ({ setOpenModal }) => {
               required
             />
           </label>
-          <label id={styles.phone}>
+          <label id="phone">
             Phone Number:
             <input
               type="text"
@@ -81,7 +81,7 @@ const Form = ({ setOpenModal }) => {
               required
             />
           </label>
-          <label id={styles.dob}>
+          <label id="dob">
             Date of Birth:
             <input
               type="date"
