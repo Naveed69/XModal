@@ -44,7 +44,7 @@ const Form = () => {
       <div className="modal-content">
         <form onSubmit={(e) => handle(e)}>
           <h2>Fill Details</h2>
-          <label>User Name:</label>
+          <label>Username:
           <input
             type="text"
             name="username"
@@ -53,8 +53,8 @@ const Form = () => {
             id={styles.username}
             onChange={handleChange}
             required
-          />
-          <label>Email Address:</label>
+          /></label>
+          <label id="email">Email Address:
           <input
             type="email"
             name="email"
@@ -63,8 +63,8 @@ const Form = () => {
             id={styles.email}
             onChange={handleChange}
             required
-          />
-          <label>Phone Number:</label>
+          /></label>
+          <label>Phone Number:
           <input
             type="tel"
             name="phone"
@@ -73,8 +73,8 @@ const Form = () => {
             id={styles.phone}
             onChange={handleChange}
             required
-          />
-          <label>Date of Birth:</label>
+          /></label>
+          <label>Date of Birth:
           <input
             type="date"
             name="dob"
@@ -82,7 +82,7 @@ const Form = () => {
             id={styles.dob}
             onChange={handleChange}
             required
-          />
+          /></label>
           <button type="submit" className="submit-button">
             Submit
           </button>
