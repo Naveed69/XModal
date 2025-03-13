@@ -13,8 +13,15 @@ const Form = () => {
       alert("Invalid phone number. Please enter a 10-digit phone number.");
       return;
     }
-    const todayDate = new Date(yyyymmdd);
+    const todayDate = new Date();
+    const date=new Date(formData.dob)
     console.log(todayDate, formData.dob);
+
+    if(date>todayDate)
+    {
+      alert("Invalid date of birth. Date of birth cannot be in the future.")
+      return;
+    }
   };
   const handleChange = (e) => {
     const name1 = e.target.name;
