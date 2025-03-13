@@ -44,7 +44,7 @@ const Form = () => {
       <div className="modal-content">
         <form onSubmit={(e) => handle(e)}>
           <h2>Fill Details</h2>
-          <label>
+          <label id="username">
             Username:
             <input
               type="text"
