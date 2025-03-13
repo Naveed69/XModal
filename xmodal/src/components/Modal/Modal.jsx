@@ -30,6 +30,7 @@ function ModalSet({ isOpen, setIsOpen, children }) {
       isOpen={isOpen}
       onRequestClose={handleClose}
       shouldCloseOnOverlayClick={true}
+      overlayClassName="modal-overlay"
       style={customStyles}
     >
       {children}
