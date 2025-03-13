@@ -44,45 +44,53 @@ const Form = () => {
       <div className="modal-content">
         <form onSubmit={(e) => handle(e)}>
           <h2>Fill Details</h2>
-          <label>Username:
-          <input
-            type="text"
-            name="username"
-            placeholder="Enter Name"
-            value={formData.username}
-            id={styles.username}
-            onChange={handleChange}
-            required
-          /></label>
-          <label id="email">Email Address:
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter Email"
-            value={formData.email}
-            id={styles.email}
-            onChange={handleChange}
-            required
-          /></label>
-          <label>Phone Number:
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Enter Number"
-            value={formData.phone}
-            id={styles.phone}
-            onChange={handleChange}
-            required
-          /></label>
-          <label>Date of Birth:
-          <input
-            type="date"
-            name="dob"
-            value={formData.dob}
-            id={styles.dob}
-            onChange={handleChange}
-            required
-          /></label>
+          <label>
+            Username:
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter Name"
+              value={formData.username}
+              id={styles.username}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label id="email">
+            Email Address:
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Email"
+              value={formData.email}
+              id={styles.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label id="phone">
+            Phone Number:
+            <input
+              type="text"
+              name="phone"
+              placeholder="Enter Number"
+              value={formData.phone}
+              id={styles.phone}
+              onChange={handleChange}
+              required
+            />
+          </label>
+          <label id="dob">
+            Date of Birth:
+            <input
+              type="date"
+              name="dob"
+              value={formData.dob}
+              id={styles.dob}
+              onChange={handleChange}
+              required
+            />
+          </label>
           <button type="submit" className="submit-button">
             Submit
           </button>
