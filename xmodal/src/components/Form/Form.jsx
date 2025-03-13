@@ -35,7 +35,6 @@ const Form = () => {
   return (
     <div className="modal">
       <div className="modal-content">
-        // jsx code for form creation
         <form onSubmit={(e) => handle(e)}>
           <h2>Fill Details</h2>
           <label>User Name:</label>
