@@ -9,6 +9,13 @@ const Form = () => {
   });
   const handle = (e) => {
     e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailRegex.test(formData.email)) {
+      alert("Invalid email");
+      return;
+    }
+
     if (formData.phone.length != 10) {
       alert("Invalid phone number. Please enter a 10-digit phone number.");
       return;
