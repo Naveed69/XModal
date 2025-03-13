@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./Form.module.css";
-const Form = () => {
+const Form = ({ setOpenModal }) => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -34,6 +34,7 @@ const Form = () => {
       phone: "",
       dob: "",
     });
+    setOpenModal(false);
   };
   const handleChange = (e) => {
     const name1 = e.target.name;

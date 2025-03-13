@@ -11,7 +11,7 @@ const Login = () => {
         <h1>User Details Modal</h1>
         <button onClick={() => setOpenModal(true)}>Open Form</button>
         <ModalSet isOpen={openModal} setIsOpen={setOpenModal}>
-          {<Form />}
+          {<Form setOpenModal={setOpenModal}/>}
         </ModalSet>
       </div>
     </>
