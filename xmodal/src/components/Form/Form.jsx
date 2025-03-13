@@ -14,14 +14,19 @@ const Form = () => {
       return;
     }
     const todayDate = new Date();
-    const date=new Date(formData.dob)
+    const date = new Date(formData.dob);
     console.log(todayDate, formData.dob);
 
-    if(date>todayDate)
-    {
-      alert("Invalid date of birth. Date of birth cannot be in the future.")
+    if (date > todayDate) {
+      alert("Invalid date of birth. Date of birth cannot be in the future.");
       return;
     }
+    setFormData({
+      username: "",
+      email: "",
+      phone: "",
+      dob: "",
+    });
   };
   const handleChange = (e) => {
     const name1 = e.target.name;
