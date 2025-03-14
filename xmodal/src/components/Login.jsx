@@ -10,9 +10,11 @@ const Login = () => {
       <div className={styles.container}>
         <h1>User Details Modal</h1>
         <button onClick={() => setOpenModal(true)}>Open Form</button>
+        <div onClick={() => setOpenModal(false)} className="modal show-modal">
         <ModalSet isOpen={openModal} setIsOpen={setOpenModal}>
           {<Form setOpenModal={setOpenModal}/>}
         </ModalSet>
+        </div>
       </div>
     </>
   );
