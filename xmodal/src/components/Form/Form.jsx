@@ -41,7 +41,7 @@ const Form = ({ setOpenModal }) => {
     setFormData({ ...formData, [name1]: e.target.value });
   };
   return (
-    <div>
+    <div className="modal">
       <div className="modal-content">
         <form onSubmit={(e) => handle(e)}>
           <h2>Fill Details</h2>
